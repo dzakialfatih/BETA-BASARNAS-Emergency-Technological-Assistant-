@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityEdit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="133dp"
+        android:layout_height="144dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.158"
+        tools:src="@tools:sample/avatars" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:contentDescription="@string/search"
+        android:foregroundGravity="bottom"
+        app:backgroundTint="#FF5F00"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_add"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="155dp"
+        android:layout_height="56dp"
+        android:text="SIMPAN"
+        app:backgroundTint="#FF5F00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toEndOf="@+id/delete_button"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="659dp" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="155dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="36dp"
+        android:text="HAPUS"
+        app:backgroundTint="#FF5F00"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="659dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FF5F00"
+        android:gravity="center"
+        android:text="EDIT DATA PENGUNGSI"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="none"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/nama_pengungsi"
+        android:layout_width="335dp"
+        android:layout_height="58dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="270dp"
+        tools:text="Nama" />
+
+    <EditText
+        android:id="@+id/kondisi_pengungsi"
+        android:layout_width="335dp"
+        android:layout_height="58dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="560dp"
+        tools:text="Kondisi saat ini" />
+
+    <EditText
+        android:id="@+id/dom_pengungsi"
+        android:layout_width="335dp"
+        android:layout_height="58dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="444dp"
+        tools:text="Domisili" />
+
+    <!-- Radio Buttons -->
+
+    <RadioButton
+        android:id="@+id/radioMale"
+        android:layout_width="136dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="36dp"
+        android:text="Laki-laki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nama_pengungsi"
+        tools:ignore="MissingConstraints" />
+
+    <RadioButton
+        android:id="@+id/radioFemale"
+        android:layout_width="136dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:text="Perempuan"
+        app:layout_constraintStart_toEndOf="@id/radioMale"
+        app:layout_constraintTop_toBottomOf="@id/nama_pengungsi"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Other EditTexts and Views -->
+
+    <EditText
+        android:id="@+id/posko_pengungsi"
+        android:layout_width="335dp"
+        android:layout_height="58dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="502dp"
+        tools:text="Posko Pengungsian" />
+
+    <EditText
+        android:id="@+id/usia_pengungsi"
+        android:layout_width="335dp"
+        android:layout_height="58dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="386dp"
+        tools:text="Usia" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

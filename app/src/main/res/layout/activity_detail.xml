@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="#FF5F00"
+        android:gravity="center|clip_vertical|top"
+        android:text="DATA PENGUNGSI"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="none"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="190dp"
+        android:layout_height="236dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center|right"
+        android:text="NAMA :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nama_pengungsi"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <TextView
+        android:id="@+id/nama_pengungsi"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center|left"
+        android:text="NAMA"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <TextView
+        android:id="@+id/posko"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center|right"
+        android:text="POSKO :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/posko_pengungsi"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <TextView
+        android:id="@+id/id_pengungsi"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center|left"
+        android:text="ID"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <TextView
+        android:id="@+id/posko_pengungsi"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center|left"
+        android:text="POSKO"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <TextView
+        android:id="@+id/usia"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center|right"
+        android:text="USIA :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/id_pengungsi7"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <TextView
+        android:id="@+id/kondisi"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center|right"
+        android:text="KONDISI :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/kondisi_pengungsi"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="591dp" />
+
+    <RadioButton
+        android:id="@+id/FemaleButton"
+        android:layout_width="124dp"
+        android:layout_height="48dp"
+        android:text="Perempuan"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <TextView
+        android:id="@+id/kondisi_pengungsi"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center|clip_vertical|left"
+        android:text="KONDISI"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="581dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="68dp"
+        android:text="HAPUS"
+        app:backgroundTint="#002379"
+        app:iconTint="@color/orange_background"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="662dp" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="68dp"
+        android:text="EDIT"
+        app:backgroundTint="#002379"
+        app:iconTint="@color/orange_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="662dp" />
+
+    <TextView
+        android:id="@+id/dom_pengungsi"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center|left"
+        android:text="DOMISILI"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <RadioButton
+        android:id="@+id/MaleButton"
+        android:layout_width="124dp"
+        android:layout_height="48dp"
+        android:text="Laki-laki"
+        tools:ignore="DuplicateIds,MissingConstraints"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <TextView
+        android:id="@+id/domisili"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center|right"
+        android:text="DOMISILI :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/dom_pengungsi"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="500dp" />
+
+    <TextView
+        android:id="@+id/id_pengungsi7"
+        android:layout_width="200dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="56dp"
+        android:gravity="center|left"
+        android:text="USIA"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center|right"
+        android:text="ID :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/id_pengungsi"
+        app:layout_constraintHorizontal_bias="0.823"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="323dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

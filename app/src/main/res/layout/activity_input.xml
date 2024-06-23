@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InputActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:background="#FF5F00"
+        android:gravity="center"
+        android:text="INPUT DATA PENGUNGSI"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="133dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        tools:src="@tools:sample/avatars" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:backgroundTint="#FF5F00"
+        android:tint="@android:color/white"
+        android:src="@drawable/ic_add_photo"
+        app:layout_constraintStart_toEndOf="@id/img_item_photo"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        app:layout_constraintBottom_toBottomOf="@id/img_item_photo" />
+
+    <EditText
+        android:id="@+id/nama_pengungsi"
+        android:layout_width="363dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:hint="Nama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_item_photo" />
+
+    <RadioGroup
+        android:id="@+id/genderRadioGroup"
+        android:layout_width="363dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nama_pengungsi">
+
+        <RadioButton
+            android:id="@+id/radioMaleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="Laki-laki"/>
+
+        <RadioButton
+            android:id="@+id/FemaleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="Perempuan"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/usia_pengungsi"
+        android:layout_width="363dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:hint="Usia"
+        android:inputType="number"
+        android:digits="0123456789"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/genderRadioGroup" />
+
+
+    <EditText
+        android:id="@+id/dom_pengungsi"
+        android:layout_width="363dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:hint="Domisili"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usia_pengungsi" />
+
+    <EditText
+        android:id="@+id/posko_pengungsi"
+        android:layout_width="363dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:hint="Posko Pengungsian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dom_pengungsi" />
+
+    <EditText
+        android:id="@+id/kondisi_pengungsi"
+        android:layout_width="363dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:hint="Kondisi saat ini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/posko_pengungsi" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="363dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:text="TAMBAHKAN"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#FF5F00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
